@@ -64,14 +64,39 @@ struct _R {
     }
 
 
-    /// This `_R.string.localizable` struct is generated, and contains static references to 19 localization keys.
+    /// This `_R.string.localizable` struct is generated, and contains static references to 42 localization keys.
     struct localizable {
       let source: RswiftResources.StringResource.Source
+
+      /// Value: Block
+      ///
+      /// Key: Block
+      var block: RswiftResources.StringResource { .init(key: "Block", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
       /// Value: BunnyScene
       ///
       /// Key: BunnyScene
       var bunnyScene: RswiftResources.StringResource { .init(key: "BunnyScene", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Coin
+      ///
+      /// Key: Coin
+      var coin: RswiftResources.StringResource { .init(key: "Coin", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: container
+      ///
+      /// Key: Container
+      var container: RswiftResources.StringResource { .init(key: "Container", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: effect
+      ///
+      /// Key: Effect
+      var effect: RswiftResources.StringResource { .init(key: "Effect", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Flappy Rabbit
+      ///
+      /// Key: FlappyRabbit
+      var flappyRabbit: RswiftResources.StringResource { .init(key: "FlappyRabbit", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
       /// Value: Game Over!
       ///
@@ -88,6 +113,36 @@ struct _R {
       /// Key: Hero
       var hero: RswiftResources.StringResource { .init(key: "Hero", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
+      /// Value: highScorePanel
+      ///
+      /// Key: HighScorePanel
+      var highScorePanel: RswiftResources.StringResource { .init(key: "HighScorePanel", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: music
+      ///
+      /// Key: Music
+      var music: RswiftResources.StringResource { .init(key: "Music", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Background
+      ///
+      /// Key: NinjaBackground
+      var ninjaBackground: RswiftResources.StringResource { .init(key: "NinjaBackground", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Ground
+      ///
+      /// Key: NinjaGround
+      var ninjaGround: RswiftResources.StringResource { .init(key: "NinjaGround", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Obstacle
+      ///
+      /// Key: NinjaObstacle
+      var ninjaObstacle: RswiftResources.StringResource { .init(key: "NinjaObstacle", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Player
+      ///
+      /// Key: NinjaPlayer
+      var ninjaPlayer: RswiftResources.StringResource { .init(key: "NinjaPlayer", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
       /// Value: obstacle
       ///
       /// Key: Obstacle
@@ -98,15 +153,35 @@ struct _R {
       /// Key: ObstacleLayer
       var obstacleLayer: RswiftResources.StringResource { .init(key: "ObstacleLayer", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
+      /// Value: Pause
+      ///
+      /// Key: Pause
+      var pause: RswiftResources.StringResource { .init(key: "Pause", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: play
+      ///
+      /// Key: Play
+      var play: RswiftResources.StringResource { .init(key: "Play", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
       /// Value: previousScore
       ///
       /// Key: PreviousScore
       var previousScore: RswiftResources.StringResource { .init(key: "PreviousScore", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
+      /// Value: Quit
+      ///
+      /// Key: Quit
+      var quit: RswiftResources.StringResource { .init(key: "Quit", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
       /// Value: resetButton
       ///
       /// Key: ResetButton
       var resetButton: RswiftResources.StringResource { .init(key: "ResetButton", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Resume
+      ///
+      /// Key: Resume
+      var resume: RswiftResources.StringResource { .init(key: "Resume", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
       /// Value: scoreLabel
       ///
@@ -123,6 +198,16 @@ struct _R {
       /// Key: ScrollGroundlLayer
       var scrollGroundlLayer: RswiftResources.StringResource { .init(key: "ScrollGroundlLayer", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
+      /// Value: setting
+      ///
+      /// Key: Setting
+      var setting: RswiftResources.StringResource { .init(key: "Setting", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: settingPanel
+      ///
+      /// Key: SettingPanel
+      var settingPanel: RswiftResources.StringResource { .init(key: "SettingPanel", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
       /// Value: Shake
       ///
       /// Key: Shake
@@ -132,6 +217,16 @@ struct _R {
       ///
       /// Key: Taptostart
       var taptostart: RswiftResources.StringResource { .init(key: "Taptostart", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: fKeyHighScore
+      ///
+      /// Key: fKeyHighScore
+      var fKeyHighScore: RswiftResources.StringResource { .init(key: "fKeyHighScore", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: fScore
+      ///
+      /// Key: fScore
+      var fScore: RswiftResources.StringResource { .init(key: "fScore", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
       /// Value: high
       ///
@@ -148,6 +243,16 @@ struct _R {
       /// Key: highScoreLabelName
       var highScoreLabelName: RswiftResources.StringResource { .init(key: "highScoreLabelName", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
+      /// Value: keyEffect
+      ///
+      /// Key: keyEffect
+      var keyEffect: RswiftResources.StringResource { .init(key: "keyEffect", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: keyMusic
+      ///
+      /// Key: keyMusic
+      var keyMusic: RswiftResources.StringResource { .init(key: "keyMusic", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
       /// Value: orientation
       ///
       /// Key: orientation
@@ -158,6 +263,16 @@ struct _R {
       /// Key: pointsLabelName
       var pointsLabelName: RswiftResources.StringResource { .init(key: "pointsLabelName", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
+      /// Value: sKeyHighScore
+      ///
+      /// Key: sKeyHighScore
+      var sKeyHighScore: RswiftResources.StringResource { .init(key: "sKeyHighScore", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: sKeyScore
+      ///
+      /// Key: sKeyScore
+      var sKeyScore: RswiftResources.StringResource { .init(key: "sKeyScore", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
       /// Value: tapToStartLabel
       ///
       /// Key: tapToStartLabelName
@@ -165,23 +280,47 @@ struct _R {
     }
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 1 colors.
+  /// This `_R.color` struct is generated, and contains static references to 5 colors.
   struct color {
     let bundle: Foundation.Bundle
 
     /// Color `AccentColor`.
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
+
+    /// Color `cream`.
+    var cream: RswiftResources.ColorResource { .init(name: "cream", path: [], bundle: bundle) }
+
+    /// Color `green`.
+    var green: RswiftResources.ColorResource { .init(name: "green", path: [], bundle: bundle) }
+
+    /// Color `grey`.
+    var grey: RswiftResources.ColorResource { .init(name: "grey", path: [], bundle: bundle) }
+
+    /// Color `sky`.
+    var sky: RswiftResources.ColorResource { .init(name: "sky", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 13 images.
+  /// This `_R.image` struct is generated, and contains static references to 40 images.
   struct image {
     let bundle: Foundation.Bundle
+
+    /// Image `back`.
+    var back: RswiftResources.ImageResource { .init(name: "back", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `background`.
     var background: RswiftResources.ImageResource { .init(name: "background", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `bg_crystals`.
     var bg_crystals: RswiftResources.ImageResource { .init(name: "bg_crystals", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `block-1`.
+    var block1: RswiftResources.ImageResource { .init(name: "block-1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `block-2`.
+    var block2: RswiftResources.ImageResource { .init(name: "block-2", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `block-3`.
+    var block3: RswiftResources.ImageResource { .init(name: "block-3", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `bunny1`.
     var bunny1: RswiftResources.ImageResource { .init(name: "bunny1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -198,11 +337,74 @@ struct _R {
     /// Image `clouds`.
     var clouds: RswiftResources.ImageResource { .init(name: "clouds", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `coin-1`.
+    var coin1: RswiftResources.ImageResource { .init(name: "coin-1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `coin-2`.
+    var coin2: RswiftResources.ImageResource { .init(name: "coin-2", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `coin-3`.
+    var coin3: RswiftResources.ImageResource { .init(name: "coin-3", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `coin-4`.
+    var coin4: RswiftResources.ImageResource { .init(name: "coin-4", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `coin-5`.
+    var coin5: RswiftResources.ImageResource { .init(name: "coin-5", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `coin-6`.
+    var coin6: RswiftResources.ImageResource { .init(name: "coin-6", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `effectOff`.
+    var effectOff: RswiftResources.ImageResource { .init(name: "effectOff", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `effectOn`.
+    var effectOn: RswiftResources.ImageResource { .init(name: "effectOn", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `gameOver`.
+    var gameOver: RswiftResources.ImageResource { .init(name: "gameOver", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `ground`.
     var ground: RswiftResources.ImageResource { .init(name: "ground", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `highscore`.
+    var highscore: RswiftResources.ImageResource { .init(name: "highscore", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `life-off`.
+    var lifeOff: RswiftResources.ImageResource { .init(name: "life-off", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `life-on`.
+    var lifeOn: RswiftResources.ImageResource { .init(name: "life-on", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `lion`.
     var lion: RswiftResources.ImageResource { .init(name: "lion", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `musicOff`.
+    var musicOff: RswiftResources.ImageResource { .init(name: "musicOff", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `musicOn`.
+    var musicOn: RswiftResources.ImageResource { .init(name: "musicOn", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `ninjaBackground`.
+    var ninjaBackground: RswiftResources.ImageResource { .init(name: "ninjaBackground", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `ninjaball`.
+    var ninjaball: RswiftResources.ImageResource { .init(name: "ninjaball", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `obstacle-1`.
+    var obstacle1: RswiftResources.ImageResource { .init(name: "obstacle-1", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `obstacle-2`.
+    var obstacle2: RswiftResources.ImageResource { .init(name: "obstacle-2", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `panel`.
+    var panel: RswiftResources.ImageResource { .init(name: "panel", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `pause`.
+    var pause: RswiftResources.ImageResource { .init(name: "pause", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `play`.
+    var play: RswiftResources.ImageResource { .init(name: "play", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `play_button`.
     var play_button: RswiftResources.ImageResource { .init(name: "play_button", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -212,6 +414,12 @@ struct _R {
 
     /// Image `restart_button`.
     var restart_button: RswiftResources.ImageResource { .init(name: "restart_button", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `resume`.
+    var resume: RswiftResources.ImageResource { .init(name: "resume", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `setting`.
+    var setting: RswiftResources.ImageResource { .init(name: "setting", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `tree`.
     var tree: RswiftResources.ImageResource { .init(name: "tree", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -267,7 +475,7 @@ struct _R {
     }
   }
 
-  /// This `_R.file` struct is generated, and contains static references to 17 resource files.
+  /// This `_R.file` struct is generated, and contains static references to 18 resource files.
   struct file {
     let bundle: Foundation.Bundle
 
@@ -282,6 +490,9 @@ struct _R {
 
     /// Resource file `MarioScene.sks`.
     var marioSceneSks: RswiftResources.FileResource { .init(name: "MarioScene", pathExtension: "sks", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `NinjaScene.sks`.
+    var ninjaSceneSks: RswiftResources.FileResource { .init(name: "NinjaScene", pathExtension: "sks", bundle: bundle, locale: LocaleReference.none) }
 
     /// Resource file `ObstaclesScene.sks`.
     var obstaclesSceneSks: RswiftResources.FileResource { .init(name: "ObstaclesScene", pathExtension: "sks", bundle: bundle, locale: LocaleReference.none) }
@@ -329,7 +540,7 @@ struct _R {
     var flappyRabit: flappyRabit { .init(bundle: bundle) }
     var launchScreen: launchScreen { .init(bundle: bundle) }
     var main: main { .init(bundle: bundle) }
-    var scoreScreenTemplate: scoreScreenTemplate { .init(bundle: bundle) }
+    var ninja: ninja { .init(bundle: bundle) }
     var superMario: superMario { .init(bundle: bundle) }
 
     func flappyRabit(bundle: Foundation.Bundle) -> flappyRabit {
@@ -341,7 +552,7 @@ struct _R {
     func main(bundle: Foundation.Bundle) -> main {
       .init(bundle: bundle)
     }
-    func scoreScreenTemplate(bundle: Foundation.Bundle) -> scoreScreenTemplate {
+    func ninja(bundle: Foundation.Bundle) -> ninja {
       .init(bundle: bundle)
     }
     func superMario(bundle: Foundation.Bundle) -> superMario {
@@ -351,7 +562,7 @@ struct _R {
       try self.flappyRabit.validate()
       try self.launchScreen.validate()
       try self.main.validate()
-      try self.scoreScreenTemplate.validate()
+      try self.ninja.validate()
       try self.superMario.validate()
     }
 
@@ -362,13 +573,9 @@ struct _R {
 
       let name = "FlappyRabit"
 
-      var flappyRabitViewController: RswiftResources.StoryboardViewControllerIdentifier<FlappyRabitViewController> { .init(identifier: "FlappyRabitViewController", storyboard: name, bundle: bundle) }
       var welcomeViewController: RswiftResources.StoryboardViewControllerIdentifier<WelcomeViewController> { .init(identifier: "WelcomeViewController", storyboard: name, bundle: bundle) }
 
       func validate() throws {
-        if UIKit.UIImage(named: "play_button", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'play_button' is used in storyboard 'FlappyRabit', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "rabbit", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'rabbit' is used in storyboard 'FlappyRabit', but couldn't be loaded.") }
-        if flappyRabitViewController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'flappyRabitViewController' could not be loaded from storyboard 'FlappyRabit' as 'FlappyRabitViewController'.") }
         if welcomeViewController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'welcomeViewController' could not be loaded from storyboard 'FlappyRabit' as 'WelcomeViewController'.") }
       }
     }
@@ -400,19 +607,16 @@ struct _R {
       }
     }
 
-    /// Storyboard `ScoreScreenTemplate`.
-    struct scoreScreenTemplate: RswiftResources.StoryboardReference, RswiftResources.InitialControllerContainer {
-      typealias InitialController = UIKit.UINavigationController
-
+    /// Storyboard `Ninja`.
+    struct ninja: RswiftResources.StoryboardReference {
       let bundle: Foundation.Bundle
 
-      let name = "ScoreScreenTemplate"
+      let name = "Ninja"
 
-      var scoreVC: RswiftResources.StoryboardViewControllerIdentifier<ScoreViewController> { .init(identifier: "scoreVC", storyboard: name, bundle: bundle) }
+      var ninjaViewController: RswiftResources.StoryboardViewControllerIdentifier<NinjaViewController> { .init(identifier: "NinjaViewController", storyboard: name, bundle: bundle) }
 
       func validate() throws {
-        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "xmark") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'xmark' is used in storyboard 'ScoreScreenTemplate', but couldn't be loaded.") } }
-        if scoreVC() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'scoreVC' could not be loaded from storyboard 'ScoreScreenTemplate' as 'ScoreViewController'.") }
+        if ninjaViewController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'ninjaViewController' could not be loaded from storyboard 'Ninja' as 'NinjaViewController'.") }
       }
     }
 

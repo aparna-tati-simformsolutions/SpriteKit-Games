@@ -7,6 +7,8 @@
 */
 
 // Flappy Rabit Game Strings
+"FlappyRabbit" = "Flappy Rabbit";
+
 "BunnyScene" = "BunnyScene";
 "PreviousScore" = "previousScore";
 "Hero" = "Hero";
@@ -19,6 +21,8 @@
 "ScoreLabel" = "scoreLabel";
 "Goal" = "goal";
 "orientation" = "orientation";
+"fKeyHighScore" = "fKeyHighScore";
+"fScore" = "fScore";
 
 // Super Mario Game Strings
 "Taptostart" = "Tap to start!";
@@ -29,3 +33,24 @@
 "GameOver" = "Game Over!";
 "highScore" = "highScore";
 
+// Super Ninja Game Strings
+"keyMusic" = "keyMusic";
+"keyEffect" = "keyEffect";
+"NinjaBackground" = "Background";
+"NinjaGround" = "Ground";
+"NinjaPlayer" = "Player";
+"Block" = "Block";
+"NinjaObstacle" = "Obstacle";
+"Coin" = "Coin";
+"Pause" = "Pause";
+"Resume" = "Resume";
+"Quit" = "Quit";
+"Play" = "play";
+"Setting" = "setting";
+"HighScorePanel" = "highScorePanel";
+"SettingPanel" = "settingPanel";
+"Music" = "music";
+"Effect" = "effect";
+"Container" = "container";
+"sKeyHighScore" = "sKeyHighScore";
+"sKeyScore" = "sKeyScore";
