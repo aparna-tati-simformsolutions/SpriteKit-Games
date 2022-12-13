@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08A83728B7D67FEDBC2BF581 /* Pods_SpriteKit_Games.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF87651B30BF55C92347E477 /* Pods_SpriteKit_Games.framework */; };
-		6171B866FFCD933C6FB0BB49 /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4D06FCBD2F46871220158 /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework */; };
-		B90CCB002959BC3B00902ED1 /* ScoreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90CCAFF2959BC3B00902ED1 /* ScoreScreenViewController.swift */; };
-		B949D2BD299F98BD0022B549 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B949D2BC299F98B30022B549 /* Localizable.strings */; };
+		345E9FA0F783E87709E6D30C /* Pods_SpriteKit_Games.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B7EDDF44DEBFEEE276DB7F /* Pods_SpriteKit_Games.framework */; };
+		6D79A7BF4FC6ADE81CB342C2 /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9BB122C56B57DE152658BF /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework */; };
+		8FE656C73A7A768F26147566 /* Pods_SpriteKit_GamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A244AB13519BA97D78374AD /* Pods_SpriteKit_GamesTests.framework */; };
+		B90CCB002959BC3B00902ED1 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90CCAFF2959BC3B00902ED1 /* ScoreViewController.swift */; };
 		B96DFA11294B5B84004EEC9E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96DFA10294B5B84004EEC9E /* CustomButton.swift */; };
 		B971CB5F2948848C00D61F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971CB5E2948848C00D61F75 /* AppDelegate.swift */; };
 		B971CB672948848C00D61F75 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971CB662948848C00D61F75 /* GameViewController.swift */; };
@@ -23,12 +23,43 @@
 		B971CB932948A18A00D61F75 /* BunnyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B971CB922948A18A00D61F75 /* BunnyScene.sks */; };
 		B971CB952948A1FE00D61F75 /* BunnyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971CB942948A1FE00D61F75 /* BunnyScene.swift */; };
 		B971CB972948A41B00D61F75 /* Hero.sks in Resources */ = {isa = PBXBuildFile; fileRef = B971CB962948A41B00D61F75 /* Hero.sks */; };
+		B974B53F299B5329006ED5E7 /* FlappyRabit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B974B53E299B5329006ED5E7 /* FlappyRabit.storyboard */; };
+		B974B541299B5353006ED5E7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974B540299B5353006ED5E7 /* WelcomeViewController.swift */; };
 		B981B6F82949CE32005B3C4C /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B981B6F72949CE32005B3C4C /* CGFloatExtensions.swift */; };
 		B981B6FA2949EE9F005B3C4C /* ObstaclesScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B981B6F92949EE9F005B3C4C /* ObstaclesScene.sks */; };
-		B9A995032A3C382700FF3562 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A995022A3C382700FF3562 /* R.generated.swift */; };
+		B985C501299CB1CD000B95CA /* FlappyRabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B985C500299CB1CD000B95CA /* FlappyRabitViewController.swift */; };
+		B993CF00299E176700C879AE /* SuperMario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B993CEFF299E176700C879AE /* SuperMario.storyboard */; };
+		B993CF02299E177700C879AE /* SuperMarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B993CF01299E177700C879AE /* SuperMarioViewController.swift */; };
+		B993CF04299E17F000C879AE /* MarioScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B993CF03299E17F000C879AE /* MarioScene.sks */; };
+		B9A995142A3C3CC100FF3562 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A995082A3C3CC100FF3562 /* Roboto-ThinItalic.ttf */; };
+		B9A995152A3C3CC100FF3562 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A995092A3C3CC100FF3562 /* Roboto-Thin.ttf */; };
+		B9A995162A3C3CC100FF3562 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A9950A2A3C3CC100FF3562 /* Roboto-BlackItalic.ttf */; };
+		B9A995172A3C3CC100FF3562 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A9950B2A3C3CC100FF3562 /* Roboto-Italic.ttf */; };
+		B9A995182A3C3CC100FF3562 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A9950C2A3C3CC100FF3562 /* Roboto-Light.ttf */; };
+		B9A995192A3C3CC100FF3562 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A9950D2A3C3CC100FF3562 /* Roboto-LightItalic.ttf */; };
+		B9A9951A2A3C3CC100FF3562 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A9950E2A3C3CC100FF3562 /* Roboto-MediumItalic.ttf */; };
+		B9A9951B2A3C3CC100FF3562 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A9950F2A3C3CC100FF3562 /* Roboto-BoldItalic.ttf */; };
+		B9A9951C2A3C3CC100FF3562 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A995102A3C3CC100FF3562 /* Roboto-Regular.ttf */; };
+		B9A9951D2A3C3CC100FF3562 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A995112A3C3CC100FF3562 /* Roboto-Black.ttf */; };
+		B9A9951E2A3C3CC100FF3562 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A995122A3C3CC100FF3562 /* Roboto-Bold.ttf */; };
+		B9A9951F2A3C3CC100FF3562 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9A995132A3C3CC100FF3562 /* Roboto-Medium.ttf */; };
+		B9C3C752299E1D5000F51BB8 /* MarioScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C751299E1D5000F51BB8 /* MarioScene.swift */; };
+		B9C3C754299E215E00F51BB8 /* MovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C753299E215E00F51BB8 /* MovingGround.swift */; };
+		B9C3C756299E27BC00F51BB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C755299E27BC00F51BB8 /* Constants.swift */; };
+		B9C3C759299E289B00F51BB8 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C758299E289B00F51BB8 /* Cloud.swift */; };
+		B9C3C75B299E2A8A00F51BB8 /* CloudGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C75A299E2A8A00F51BB8 /* CloudGenerator.swift */; };
+		B9C3C75D299E398400F51BB8 /* MarioHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C75C299E398400F51BB8 /* MarioHero.swift */; };
+		B9C3C760299E47CB00F51BB8 /* PointsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C75F299E47CB00F51BB8 /* PointsLabel.swift */; };
+		B9C3C763299E57BC00F51BB8 /* WallGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C762299E57BC00F51BB8 /* WallGenerator.swift */; };
+		B9C3C765299E57FA00F51BB8 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C764299E57FA00F51BB8 /* Wall.swift */; };
+		B9C3C769299E6CBC00F51BB8 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C768299E6CBC00F51BB8 /* Lion.swift */; };
+		B9C3C76B299E6CCA00F51BB8 /* LionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C76A299E6CCA00F51BB8 /* LionGenerator.swift */; };
+		B9C3C76D299E6D8900F51BB8 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C76C299E6D8900F51BB8 /* Tree.swift */; };
+		B9C3C76F299E6D9500F51BB8 /* TreeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3C76E299E6D9500F51BB8 /* TreeGenerator.swift */; };
+		B9CA1CDB299FB5FC000B22F1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CA1CDA299FB5FC000B22F1 /* R.generated.swift */; };
+		B9CA1CDE299FB672000B22F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CA1CDD299FB672000B22F1 /* Localizable.strings */; };
 		B9E8828A294C5FCF00F98EDB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B9E88289294C5FCF00F98EDB /* Actions.sks */; };
 		B9E8828C294C99F900F98EDB /* ScoreScreenTemplate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E8828B294C99F900F98EDB /* ScoreScreenTemplate.storyboard */; };
-		E62190D69EC22EC13033CED1 /* Pods_SpriteKit_GamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297B476E4B11B41EDC7F7C47 /* Pods_SpriteKit_GamesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +80,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15FEBC203674C4CE7C759FB2 /* Pods-SpriteKit Games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games.release.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games/Pods-SpriteKit Games.release.xcconfig"; sourceTree = "<group>"; };
-		297B476E4B11B41EDC7F7C47 /* Pods_SpriteKit_GamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKit_GamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84A4D06FCBD2F46871220158 /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87266696A074EC3519E6D83A /* Pods-SpriteKit GamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit GamesTests.release.xcconfig"; path = "Target Support Files/Pods-SpriteKit GamesTests/Pods-SpriteKit GamesTests.release.xcconfig"; sourceTree = "<group>"; };
-		A6C5B19442D88BE541810042 /* Pods-SpriteKit Games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games/Pods-SpriteKit Games.debug.xcconfig"; sourceTree = "<group>"; };
-		B90CCAFF2959BC3B00902ED1 /* ScoreScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreScreenViewController.swift; sourceTree = "<group>"; };
-		B949D2BB299F98B30022B549 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0B51935125D82FEE1E432222 /* Pods-SpriteKit Games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games/Pods-SpriteKit Games.debug.xcconfig"; sourceTree = "<group>"; };
+		55BB1262AD2609BCA75F1925 /* Pods-SpriteKit GamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit GamesTests.release.xcconfig"; path = "Target Support Files/Pods-SpriteKit GamesTests/Pods-SpriteKit GamesTests.release.xcconfig"; sourceTree = "<group>"; };
+		6656D4BD00B67BFC88EE159D /* Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A244AB13519BA97D78374AD /* Pods_SpriteKit_GamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKit_GamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		809A8BFA9F8794B8C0075F91 /* Pods-SpriteKit GamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit GamesTests.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKit GamesTests/Pods-SpriteKit GamesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B7EDDF44DEBFEEE276DB7F /* Pods_SpriteKit_Games.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKit_Games.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90CCAFF2959BC3B00902ED1 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		B96DFA10294B5B84004EEC9E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B971CB5B2948848C00D61F75 /* SpriteKit Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKit Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B971CB5E2948848C00D61F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,15 +102,46 @@
 		B971CB922948A18A00D61F75 /* BunnyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BunnyScene.sks; sourceTree = "<group>"; };
 		B971CB942948A1FE00D61F75 /* BunnyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunnyScene.swift; sourceTree = "<group>"; };
 		B971CB962948A41B00D61F75 /* Hero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Hero.sks; sourceTree = "<group>"; };
+		B974B53E299B5329006ED5E7 /* FlappyRabit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlappyRabit.storyboard; sourceTree = "<group>"; };
+		B974B540299B5353006ED5E7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B981B6F72949CE32005B3C4C /* CGFloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		B981B6F92949EE9F005B3C4C /* ObstaclesScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ObstaclesScene.sks; sourceTree = "<group>"; };
-		B9A995022A3C382700FF3562 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		B985C500299CB1CD000B95CA /* FlappyRabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyRabitViewController.swift; sourceTree = "<group>"; };
+		B993CEFF299E176700C879AE /* SuperMario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuperMario.storyboard; sourceTree = "<group>"; };
+		B993CF01299E177700C879AE /* SuperMarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarioViewController.swift; sourceTree = "<group>"; };
+		B993CF03299E17F000C879AE /* MarioScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MarioScene.sks; sourceTree = "<group>"; };
+		B9A995082A3C3CC100FF3562 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		B9A995092A3C3CC100FF3562 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		B9A9950A2A3C3CC100FF3562 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B9A9950B2A3C3CC100FF3562 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		B9A9950C2A3C3CC100FF3562 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		B9A9950D2A3C3CC100FF3562 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		B9A9950E2A3C3CC100FF3562 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		B9A9950F2A3C3CC100FF3562 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B9A995102A3C3CC100FF3562 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		B9A995112A3C3CC100FF3562 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		B9A995122A3C3CC100FF3562 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		B9A995132A3C3CC100FF3562 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		B9C3C751299E1D5000F51BB8 /* MarioScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarioScene.swift; sourceTree = "<group>"; };
+		B9C3C753299E215E00F51BB8 /* MovingGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingGround.swift; sourceTree = "<group>"; };
+		B9C3C755299E27BC00F51BB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9C3C758299E289B00F51BB8 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		B9C3C75A299E2A8A00F51BB8 /* CloudGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGenerator.swift; sourceTree = "<group>"; };
+		B9C3C75C299E398400F51BB8 /* MarioHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarioHero.swift; sourceTree = "<group>"; };
+		B9C3C75F299E47CB00F51BB8 /* PointsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsLabel.swift; sourceTree = "<group>"; };
+		B9C3C762299E57BC00F51BB8 /* WallGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallGenerator.swift; sourceTree = "<group>"; };
+		B9C3C764299E57FA00F51BB8 /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		B9C3C768299E6CBC00F51BB8 /* Lion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
+		B9C3C76A299E6CCA00F51BB8 /* LionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionGenerator.swift; sourceTree = "<group>"; };
+		B9C3C76C299E6D8900F51BB8 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		B9C3C76E299E6D9500F51BB8 /* TreeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGenerator.swift; sourceTree = "<group>"; };
+		B9CA1CDA299FB5FC000B22F1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		B9CA1CDD299FB672000B22F1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B9E88289294C5FCF00F98EDB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		B9E8828B294C99F900F98EDB /* ScoreScreenTemplate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScoreScreenTemplate.storyboard; sourceTree = "<group>"; };
-		BE541A99F2FEB53CCD377953 /* Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CB1DC9A233C795F897B0F239 /* Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		EEDCC5B4E5CB6D328C980993 /* Pods-SpriteKit GamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit GamesTests.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKit GamesTests/Pods-SpriteKit GamesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FF87651B30BF55C92347E477 /* Pods_SpriteKit_Games.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKit_Games.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9BB122C56B57DE152658BF /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6B8EA45425BA55BBB1847F /* Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAD78424311F6897BF10323A /* Pods-SpriteKit Games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKit Games.release.xcconfig"; path = "Target Support Files/Pods-SpriteKit Games/Pods-SpriteKit Games.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A83728B7D67FEDBC2BF581 /* Pods_SpriteKit_Games.framework in Frameworks */,
+				345E9FA0F783E87709E6D30C /* Pods_SpriteKit_Games.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E62190D69EC22EC13033CED1 /* Pods_SpriteKit_GamesTests.framework in Frameworks */,
+				8FE656C73A7A768F26147566 /* Pods_SpriteKit_GamesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,23 +165,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6171B866FFCD933C6FB0BB49 /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework in Frameworks */,
+				6D79A7BF4FC6ADE81CB342C2 /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B799E1AFD973A0F6744A432F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FF87651B30BF55C92347E477 /* Pods_SpriteKit_Games.framework */,
-				84A4D06FCBD2F46871220158 /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework */,
-				297B476E4B11B41EDC7F7C47 /* Pods_SpriteKit_GamesTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B96DFA0F294B5B72004EEC9E /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +187,8 @@
 				B971CB772948848D00D61F75 /* SpriteKit GamesTests */,
 				B971CB812948848D00D61F75 /* SpriteKit GamesUITests */,
 				B971CB5C2948848C00D61F75 /* Products */,
-				D801846D6D0DBF2FC3FCCB78 /* Pods */,
-				B799E1AFD973A0F6744A432F /* Frameworks */,
+				F64C6B500AF30362144F66ED /* Pods */,
+				E56B34624E66D2369D207EF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,16 +205,19 @@
 		B971CB5D2948848C00D61F75 /* SpriteKit Games */ = {
 			isa = PBXGroup;
 			children = (
-				B9A995022A3C382700FF3562 /* R.generated.swift */,
-				B949D2BC299F98B30022B549 /* Localizable.strings */,
+				B9A995072A3C3CA400FF3562 /* Fonts */,
+				B9CA1CDA299FB5FC000B22F1 /* R.generated.swift */,
 				B96DFA0F294B5B72004EEC9E /* CustomControls */,
 				B981B6F62949CE18005B3C4C /* Extensions */,
-				B971CB91294896BF00D61F75 /* SpriteKitGameDemoOne */,
+				B993CEFE299E171A00C879AE /* Super Mario */,
+				B971CB91294896BF00D61F75 /* FlappyRabbit */,
 				B971CB5E2948848C00D61F75 /* AppDelegate.swift */,
 				B971CB662948848C00D61F75 /* GameViewController.swift */,
 				B971CB682948848C00D61F75 /* Main.storyboard */,
 				B971CB6B2948848D00D61F75 /* Assets.xcassets */,
 				B971CB6D2948848D00D61F75 /* LaunchScreen.storyboard */,
+				B9C3C755299E27BC00F51BB8 /* Constants.swift */,
+				B9CA1CDD299FB672000B22F1 /* Localizable.strings */,
 			);
 			path = "SpriteKit Games";
 			sourceTree = "<group>";
@@ -184,7 +239,7 @@
 			path = "SpriteKit GamesUITests";
 			sourceTree = "<group>";
 		};
-		B971CB91294896BF00D61F75 /* SpriteKitGameDemoOne */ = {
+		B971CB91294896BF00D61F75 /* FlappyRabbit */ = {
 			isa = PBXGroup;
 			children = (
 				B971CB922948A18A00D61F75 /* BunnyScene.sks */,
@@ -193,9 +248,12 @@
 				B981B6F92949EE9F005B3C4C /* ObstaclesScene.sks */,
 				B9E88289294C5FCF00F98EDB /* Actions.sks */,
 				B9E8828B294C99F900F98EDB /* ScoreScreenTemplate.storyboard */,
-				B90CCAFF2959BC3B00902ED1 /* ScoreScreenViewController.swift */,
+				B90CCAFF2959BC3B00902ED1 /* ScoreViewController.swift */,
+				B974B53E299B5329006ED5E7 /* FlappyRabit.storyboard */,
+				B974B540299B5353006ED5E7 /* WelcomeViewController.swift */,
+				B985C500299CB1CD000B95CA /* FlappyRabitViewController.swift */,
 			);
-			path = SpriteKitGameDemoOne;
+			path = FlappyRabbit;
 			sourceTree = "<group>";
 		};
 		B981B6F62949CE18005B3C4C /* Extensions */ = {
@@ -206,15 +264,106 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		D801846D6D0DBF2FC3FCCB78 /* Pods */ = {
+		B993CEFE299E171A00C879AE /* Super Mario */ = {
 			isa = PBXGroup;
 			children = (
-				A6C5B19442D88BE541810042 /* Pods-SpriteKit Games.debug.xcconfig */,
-				15FEBC203674C4CE7C759FB2 /* Pods-SpriteKit Games.release.xcconfig */,
-				CB1DC9A233C795F897B0F239 /* Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig */,
-				BE541A99F2FEB53CCD377953 /* Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig */,
-				EEDCC5B4E5CB6D328C980993 /* Pods-SpriteKit GamesTests.debug.xcconfig */,
-				87266696A074EC3519E6D83A /* Pods-SpriteKit GamesTests.release.xcconfig */,
+				B9C3C767299E6CA300F51BB8 /* Tree Generation */,
+				B9C3C766299E6C9300F51BB8 /* Lion Enemy */,
+				B9C3C761299E579100F51BB8 /* Wall Generation */,
+				B9C3C75E299E47B800F51BB8 /* Labels */,
+				B9C3C757299E283A00F51BB8 /* Cloud Generation */,
+				B993CEFF299E176700C879AE /* SuperMario.storyboard */,
+				B993CF01299E177700C879AE /* SuperMarioViewController.swift */,
+				B993CF03299E17F000C879AE /* MarioScene.sks */,
+				B9C3C751299E1D5000F51BB8 /* MarioScene.swift */,
+				B9C3C753299E215E00F51BB8 /* MovingGround.swift */,
+				B9C3C75C299E398400F51BB8 /* MarioHero.swift */,
+			);
+			path = "Super Mario";
+			sourceTree = "<group>";
+		};
+		B9A995072A3C3CA400FF3562 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B9A995112A3C3CC100FF3562 /* Roboto-Black.ttf */,
+				B9A9950A2A3C3CC100FF3562 /* Roboto-BlackItalic.ttf */,
+				B9A995122A3C3CC100FF3562 /* Roboto-Bold.ttf */,
+				B9A9950F2A3C3CC100FF3562 /* Roboto-BoldItalic.ttf */,
+				B9A9950B2A3C3CC100FF3562 /* Roboto-Italic.ttf */,
+				B9A9950C2A3C3CC100FF3562 /* Roboto-Light.ttf */,
+				B9A9950D2A3C3CC100FF3562 /* Roboto-LightItalic.ttf */,
+				B9A995132A3C3CC100FF3562 /* Roboto-Medium.ttf */,
+				B9A9950E2A3C3CC100FF3562 /* Roboto-MediumItalic.ttf */,
+				B9A995102A3C3CC100FF3562 /* Roboto-Regular.ttf */,
+				B9A995092A3C3CC100FF3562 /* Roboto-Thin.ttf */,
+				B9A995082A3C3CC100FF3562 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B9C3C757299E283A00F51BB8 /* Cloud Generation */ = {
+			isa = PBXGroup;
+			children = (
+				B9C3C758299E289B00F51BB8 /* Cloud.swift */,
+				B9C3C75A299E2A8A00F51BB8 /* CloudGenerator.swift */,
+			);
+			path = "Cloud Generation";
+			sourceTree = "<group>";
+		};
+		B9C3C75E299E47B800F51BB8 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				B9C3C75F299E47CB00F51BB8 /* PointsLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		B9C3C761299E579100F51BB8 /* Wall Generation */ = {
+			isa = PBXGroup;
+			children = (
+				B9C3C762299E57BC00F51BB8 /* WallGenerator.swift */,
+				B9C3C764299E57FA00F51BB8 /* Wall.swift */,
+			);
+			path = "Wall Generation";
+			sourceTree = "<group>";
+		};
+		B9C3C766299E6C9300F51BB8 /* Lion Enemy */ = {
+			isa = PBXGroup;
+			children = (
+				B9C3C768299E6CBC00F51BB8 /* Lion.swift */,
+				B9C3C76A299E6CCA00F51BB8 /* LionGenerator.swift */,
+			);
+			path = "Lion Enemy";
+			sourceTree = "<group>";
+		};
+		B9C3C767299E6CA300F51BB8 /* Tree Generation */ = {
+			isa = PBXGroup;
+			children = (
+				B9C3C76C299E6D8900F51BB8 /* Tree.swift */,
+				B9C3C76E299E6D9500F51BB8 /* TreeGenerator.swift */,
+			);
+			path = "Tree Generation";
+			sourceTree = "<group>";
+		};
+		E56B34624E66D2369D207EF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0B7EDDF44DEBFEEE276DB7F /* Pods_SpriteKit_Games.framework */,
+				BC9BB122C56B57DE152658BF /* Pods_SpriteKit_Games_SpriteKit_GamesUITests.framework */,
+				6A244AB13519BA97D78374AD /* Pods_SpriteKit_GamesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F64C6B500AF30362144F66ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B51935125D82FEE1E432222 /* Pods-SpriteKit Games.debug.xcconfig */,
+				FAD78424311F6897BF10323A /* Pods-SpriteKit Games.release.xcconfig */,
+				BF6B8EA45425BA55BBB1847F /* Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig */,
+				6656D4BD00B67BFC88EE159D /* Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig */,
+				809A8BFA9F8794B8C0075F91 /* Pods-SpriteKit GamesTests.debug.xcconfig */,
+				55BB1262AD2609BCA75F1925 /* Pods-SpriteKit GamesTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,12 +375,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B971CB882948848D00D61F75 /* Build configuration list for PBXNativeTarget "SpriteKit Games" */;
 			buildPhases = (
-				13097791C2209BF3916080AC /* [CP] Check Pods Manifest.lock */,
-				B9A995012A3C37D800FF3562 /* ShellScript */,
+				007A0FF6B5EFC8478D697932 /* [CP] Check Pods Manifest.lock */,
+				B9CA1CD9299FB431000B22F1 /* ShellScript */,
 				B971CB572948848C00D61F75 /* Sources */,
 				B971CB582948848C00D61F75 /* Frameworks */,
 				B971CB592948848C00D61F75 /* Resources */,
-				DB8C5C43BFD6CBD7DFAA0350 /* [CP] Embed Pods Frameworks */,
+				653EE4F12D95A2400BB3652F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,7 +395,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B971CB8B2948848D00D61F75 /* Build configuration list for PBXNativeTarget "SpriteKit GamesTests" */;
 			buildPhases = (
-				33EDAE27C1E89448FA5A5D39 /* [CP] Check Pods Manifest.lock */,
+				5352DE6BEB17F7E73AA137D3 /* [CP] Check Pods Manifest.lock */,
 				B971CB702948848D00D61F75 /* Sources */,
 				B971CB712948848D00D61F75 /* Frameworks */,
 				B971CB722948848D00D61F75 /* Resources */,
@@ -265,11 +414,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B971CB8E2948848D00D61F75 /* Build configuration list for PBXNativeTarget "SpriteKit GamesUITests" */;
 			buildPhases = (
-				DE684AABD56931947FBF4951 /* [CP] Check Pods Manifest.lock */,
+				83DF6E578EF78B0E2675C51F /* [CP] Check Pods Manifest.lock */,
 				B971CB7A2948848D00D61F75 /* Sources */,
 				B971CB7B2948848D00D61F75 /* Frameworks */,
 				B971CB7C2948848D00D61F75 /* Resources */,
-				76339443E704121006129C47 /* [CP] Embed Pods Frameworks */,
+				08FF003D0F1ABB0B1D4A7700 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,15 +478,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A995152A3C3CC100FF3562 /* Roboto-Thin.ttf in Resources */,
+				B993CF04299E17F000C879AE /* MarioScene.sks in Resources */,
+				B9A9951E2A3C3CC100FF3562 /* Roboto-Bold.ttf in Resources */,
+				B9CA1CDE299FB672000B22F1 /* Localizable.strings in Resources */,
 				B9E8828A294C5FCF00F98EDB /* Actions.sks in Resources */,
 				B971CB6A2948848C00D61F75 /* Main.storyboard in Resources */,
+				B9A9951D2A3C3CC100FF3562 /* Roboto-Black.ttf in Resources */,
+				B9A995172A3C3CC100FF3562 /* Roboto-Italic.ttf in Resources */,
+				B9A9951F2A3C3CC100FF3562 /* Roboto-Medium.ttf in Resources */,
 				B971CB932948A18A00D61F75 /* BunnyScene.sks in Resources */,
 				B971CB972948A41B00D61F75 /* Hero.sks in Resources */,
-				B949D2BD299F98BD0022B549 /* Localizable.strings in Resources */,
+				B9A995162A3C3CC100FF3562 /* Roboto-BlackItalic.ttf in Resources */,
+				B974B53F299B5329006ED5E7 /* FlappyRabit.storyboard in Resources */,
+				B993CF00299E176700C879AE /* SuperMario.storyboard in Resources */,
 				B981B6FA2949EE9F005B3C4C /* ObstaclesScene.sks in Resources */,
+				B9A995182A3C3CC100FF3562 /* Roboto-Light.ttf in Resources */,
 				B9E8828C294C99F900F98EDB /* ScoreScreenTemplate.storyboard in Resources */,
+				B9A995192A3C3CC100FF3562 /* Roboto-LightItalic.ttf in Resources */,
+				B9A9951C2A3C3CC100FF3562 /* Roboto-Regular.ttf in Resources */,
 				B971CB6C2948848D00D61F75 /* Assets.xcassets in Resources */,
 				B971CB6F2948848D00D61F75 /* LaunchScreen.storyboard in Resources */,
+				B9A9951A2A3C3CC100FF3562 /* Roboto-MediumItalic.ttf in Resources */,
+				B9A9951B2A3C3CC100FF3562 /* Roboto-BoldItalic.ttf in Resources */,
+				B9A995142A3C3CC100FF3562 /* Roboto-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +522,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13097791C2209BF3916080AC /* [CP] Check Pods Manifest.lock */ = {
+		007A0FF6B5EFC8478D697932 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,7 +544,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		33EDAE27C1E89448FA5A5D39 /* [CP] Check Pods Manifest.lock */ = {
+		08FF003D0F1ABB0B1D4A7700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5352DE6BEB17F7E73AA137D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,43 +583,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		76339443E704121006129C47 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpriteKit Games-SpriteKit GamesUITests/Pods-SpriteKit Games-SpriteKit GamesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B9A995012A3C37D800FF3562 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		DB8C5C43BFD6CBD7DFAA0350 /* [CP] Embed Pods Frameworks */ = {
+		653EE4F12D95A2400BB3652F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +600,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpriteKit Games/Pods-SpriteKit Games-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE684AABD56931947FBF4951 /* [CP] Check Pods Manifest.lock */ = {
+		83DF6E578EF78B0E2675C51F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -477,6 +622,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B9CA1CD9299FB431000B22F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -484,13 +648,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9C3C76D299E6D8900F51BB8 /* Tree.swift in Sources */,
 				B971CB952948A1FE00D61F75 /* BunnyScene.swift in Sources */,
-				B9A995032A3C382700FF3562 /* R.generated.swift in Sources */,
-				B90CCB002959BC3B00902ED1 /* ScoreScreenViewController.swift in Sources */,
+				B9C3C765299E57FA00F51BB8 /* Wall.swift in Sources */,
+				B9C3C75D299E398400F51BB8 /* MarioHero.swift in Sources */,
+				B9C3C759299E289B00F51BB8 /* Cloud.swift in Sources */,
+				B9C3C76F299E6D9500F51BB8 /* TreeGenerator.swift in Sources */,
+				B9C3C754299E215E00F51BB8 /* MovingGround.swift in Sources */,
+				B90CCB002959BC3B00902ED1 /* ScoreViewController.swift in Sources */,
 				B971CB672948848C00D61F75 /* GameViewController.swift in Sources */,
+				B9C3C75B299E2A8A00F51BB8 /* CloudGenerator.swift in Sources */,
+				B993CF02299E177700C879AE /* SuperMarioViewController.swift in Sources */,
 				B981B6F82949CE32005B3C4C /* CGFloatExtensions.swift in Sources */,
+				B9CA1CDB299FB5FC000B22F1 /* R.generated.swift in Sources */,
+				B9C3C760299E47CB00F51BB8 /* PointsLabel.swift in Sources */,
+				B9C3C752299E1D5000F51BB8 /* MarioScene.swift in Sources */,
+				B9C3C763299E57BC00F51BB8 /* WallGenerator.swift in Sources */,
+				B974B541299B5353006ED5E7 /* WelcomeViewController.swift in Sources */,
 				B971CB5F2948848C00D61F75 /* AppDelegate.swift in Sources */,
+				B9C3C76B299E6CCA00F51BB8 /* LionGenerator.swift in Sources */,
+				B9C3C769299E6CBC00F51BB8 /* Lion.swift in Sources */,
 				B96DFA11294B5B84004EEC9E /* CustomButton.swift in Sources */,
+				B985C501299CB1CD000B95CA /* FlappyRabitViewController.swift in Sources */,
+				B9C3C756299E27BC00F51BB8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,14 +707,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B949D2BC299F98B30022B549 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B949D2BB299F98B30022B549 /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		B971CB682948848C00D61F75 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -670,7 +842,7 @@
 		};
 		B971CB892948848D00D61F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6C5B19442D88BE541810042 /* Pods-SpriteKit Games.debug.xcconfig */;
+			baseConfigurationReference = 0B51935125D82FEE1E432222 /* Pods-SpriteKit Games.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -682,9 +854,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,7 +871,7 @@
 		};
 		B971CB8A2948848D00D61F75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15FEBC203674C4CE7C759FB2 /* Pods-SpriteKit Games.release.xcconfig */;
+			baseConfigurationReference = FAD78424311F6897BF10323A /* Pods-SpriteKit Games.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -712,9 +883,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -730,7 +900,7 @@
 		};
 		B971CB8C2948848D00D61F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEDCC5B4E5CB6D328C980993 /* Pods-SpriteKit GamesTests.debug.xcconfig */;
+			baseConfigurationReference = 809A8BFA9F8794B8C0075F91 /* Pods-SpriteKit GamesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,7 +921,7 @@
 		};
 		B971CB8D2948848D00D61F75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87266696A074EC3519E6D83A /* Pods-SpriteKit GamesTests.release.xcconfig */;
+			baseConfigurationReference = 55BB1262AD2609BCA75F1925 /* Pods-SpriteKit GamesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -772,7 +942,7 @@
 		};
 		B971CB8F2948848D00D61F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB1DC9A233C795F897B0F239 /* Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig */;
+			baseConfigurationReference = BF6B8EA45425BA55BBB1847F /* Pods-SpriteKit Games-SpriteKit GamesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -791,7 +961,7 @@
 		};
 		B971CB902948848D00D61F75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE541A99F2FEB53CCD377953 /* Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig */;
+			baseConfigurationReference = 6656D4BD00B67BFC88EE159D /* Pods-SpriteKit Games-SpriteKit GamesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

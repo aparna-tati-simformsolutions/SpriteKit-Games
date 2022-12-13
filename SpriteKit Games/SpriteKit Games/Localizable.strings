@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  SpriteKit Games
+
+  Created by Aparna Tati on 17/02/23.
+  
+*/
+
+// Flappy Rabit Game Strings
+"BunnyScene" = "BunnyScene";
+"PreviousScore" = "previousScore";
+"Hero" = "Hero";
+"ObstacleLayer" = "obstacleLayer";
+"Obstacle" = "obstacle";
+"ScrollGroundlLayer" = "scrollGroundlLayer";
+"ScrollCloudLayer" = "scrollCloudLayer";
+"ResetButton" = "resetButton";
+"Shake" = "Shake";
+"ScoreLabel" = "scoreLabel";
+"Goal" = "goal";
+"orientation" = "orientation";
+
+// Super Mario Game Strings
+"Taptostart" = "Tap to start!";
+"tapToStartLabelName" = "tapToStartLabel";
+"pointsLabelName" = "pointsLabel";
+"highScoreLabelName" = "highScoreLabel";
+"high" = "high";
+"GameOver" = "Game Over!";
+"highScore" = "highScore";
+

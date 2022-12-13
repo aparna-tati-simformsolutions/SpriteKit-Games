@@ -28,6 +28,28 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B971CB732948848D00D61F75"
+               BuildableName = "SpriteKit GamesTests.xctest"
+               BlueprintName = "SpriteKit GamesTests"
+               ReferencedContainer = "container:SpriteKit Games.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B971CB7D2948848D00D61F75"
+               BuildableName = "SpriteKit GamesUITests.xctest"
+               BlueprintName = "SpriteKit GamesUITests"
+               ReferencedContainer = "container:SpriteKit Games.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

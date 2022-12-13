@@ -6,33 +6,23 @@
 //
 
 import UIKit
-import SpriteKit
-import GameplayKit
 
 class GameViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: R.string.localizable.bunnyScene()) {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                // Present the scene
-                view.presentScene(scene)
-            }
-        }
     }
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
+    @IBAction func ninjaButtonClicked(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "SuperMario", bundle: .main)
+        let flappyRabitVC = storyboard.instantiateViewController(withIdentifier: "SuperMarioViewController")
+        navigationController?.pushViewController(flappyRabitVC, animated: true)
     }
-
-    override var prefersStatusBarHidden: Bool {
-        return true
+    
+    @IBAction func flappyButtonClicked(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "FlappyRabit", bundle: .main)
+        let flappyRabitVC = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController")
+        navigationController?.pushViewController(flappyRabitVC, animated: true)
     }
+    
 }

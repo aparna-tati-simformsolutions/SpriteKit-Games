@@ -15,6 +15,7 @@ struct _R {
   var string: string { .init(bundle: bundle, preferredLanguages: nil, locale: nil) }
   var color: color { .init(bundle: bundle) }
   var image: image { .init(bundle: bundle) }
+  var font: font { .init(bundle: bundle) }
   var file: file { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
@@ -33,6 +34,9 @@ struct _R {
   func image(bundle: Foundation.Bundle) -> image {
     .init(bundle: bundle)
   }
+  func font(bundle: Foundation.Bundle) -> font {
+    .init(bundle: bundle)
+  }
   func file(bundle: Foundation.Bundle) -> file {
     .init(bundle: bundle)
   }
@@ -40,6 +44,7 @@ struct _R {
     .init(bundle: bundle)
   }
   func validate() throws {
+    try self.font.validate()
     try self.storyboard.validate()
   }
 
@@ -59,86 +64,104 @@ struct _R {
     }
 
 
-    /// This `_R.string.localizable` struct is generated, and contains static references to 11 localization keys.
+    /// This `_R.string.localizable` struct is generated, and contains static references to 19 localization keys.
     struct localizable {
       let source: RswiftResources.StringResource.Source
 
-      /// en translation: BunnyScene
+      /// Value: BunnyScene
       ///
       /// Key: BunnyScene
-      ///
-      /// Locales: en
-      var bunnyScene: RswiftResources.StringResource { .init(key: "BunnyScene", tableName: "Localizable", source: source, developmentValue: "BunnyScene", comment: nil) }
+      var bunnyScene: RswiftResources.StringResource { .init(key: "BunnyScene", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: goal
+      /// Value: Game Over!
+      ///
+      /// Key: GameOver
+      var gameOver: RswiftResources.StringResource { .init(key: "GameOver", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: goal
       ///
       /// Key: Goal
-      ///
-      /// Locales: en
-      var goal: RswiftResources.StringResource { .init(key: "Goal", tableName: "Localizable", source: source, developmentValue: "goal", comment: nil) }
+      var goal: RswiftResources.StringResource { .init(key: "Goal", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: Hero
+      /// Value: Hero
       ///
       /// Key: Hero
-      ///
-      /// Locales: en
-      var hero: RswiftResources.StringResource { .init(key: "Hero", tableName: "Localizable", source: source, developmentValue: "Hero", comment: nil) }
+      var hero: RswiftResources.StringResource { .init(key: "Hero", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: obstacle
+      /// Value: obstacle
       ///
       /// Key: Obstacle
-      ///
-      /// Locales: en
-      var obstacle: RswiftResources.StringResource { .init(key: "Obstacle", tableName: "Localizable", source: source, developmentValue: "obstacle", comment: nil) }
+      var obstacle: RswiftResources.StringResource { .init(key: "Obstacle", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: obstacleLayer
+      /// Value: obstacleLayer
       ///
       /// Key: ObstacleLayer
-      ///
-      /// Locales: en
-      var obstacleLayer: RswiftResources.StringResource { .init(key: "ObstacleLayer", tableName: "Localizable", source: source, developmentValue: "obstacleLayer", comment: nil) }
+      var obstacleLayer: RswiftResources.StringResource { .init(key: "ObstacleLayer", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: previousScore
+      /// Value: previousScore
       ///
       /// Key: PreviousScore
-      ///
-      /// Locales: en
-      var previousScore: RswiftResources.StringResource { .init(key: "PreviousScore", tableName: "Localizable", source: source, developmentValue: "previousScore", comment: nil) }
+      var previousScore: RswiftResources.StringResource { .init(key: "PreviousScore", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: resetButton
+      /// Value: resetButton
       ///
       /// Key: ResetButton
-      ///
-      /// Locales: en
-      var resetButton: RswiftResources.StringResource { .init(key: "ResetButton", tableName: "Localizable", source: source, developmentValue: "resetButton", comment: nil) }
+      var resetButton: RswiftResources.StringResource { .init(key: "ResetButton", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: scoreLabel
+      /// Value: scoreLabel
       ///
       /// Key: ScoreLabel
-      ///
-      /// Locales: en
-      var scoreLabel: RswiftResources.StringResource { .init(key: "ScoreLabel", tableName: "Localizable", source: source, developmentValue: "scoreLabel", comment: nil) }
+      var scoreLabel: RswiftResources.StringResource { .init(key: "ScoreLabel", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: scrollCloudLayer
+      /// Value: scrollCloudLayer
       ///
       /// Key: ScrollCloudLayer
-      ///
-      /// Locales: en
-      var scrollCloudLayer: RswiftResources.StringResource { .init(key: "ScrollCloudLayer", tableName: "Localizable", source: source, developmentValue: "scrollCloudLayer", comment: nil) }
+      var scrollCloudLayer: RswiftResources.StringResource { .init(key: "ScrollCloudLayer", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: scrollGroundlLayer
+      /// Value: scrollGroundlLayer
       ///
       /// Key: ScrollGroundlLayer
-      ///
-      /// Locales: en
-      var scrollGroundlLayer: RswiftResources.StringResource { .init(key: "ScrollGroundlLayer", tableName: "Localizable", source: source, developmentValue: "scrollGroundlLayer", comment: nil) }
+      var scrollGroundlLayer: RswiftResources.StringResource { .init(key: "ScrollGroundlLayer", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
 
-      /// en translation: Shake
+      /// Value: Shake
       ///
       /// Key: Shake
+      var shake: RswiftResources.StringResource { .init(key: "Shake", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: Tap to start!
       ///
-      /// Locales: en
-      var shake: RswiftResources.StringResource { .init(key: "Shake", tableName: "Localizable", source: source, developmentValue: "Shake", comment: nil) }
+      /// Key: Taptostart
+      var taptostart: RswiftResources.StringResource { .init(key: "Taptostart", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: high
+      ///
+      /// Key: high
+      var high: RswiftResources.StringResource { .init(key: "high", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: highScore
+      ///
+      /// Key: highScore
+      var highScore: RswiftResources.StringResource { .init(key: "highScore", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: highScoreLabel
+      ///
+      /// Key: highScoreLabelName
+      var highScoreLabelName: RswiftResources.StringResource { .init(key: "highScoreLabelName", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: orientation
+      ///
+      /// Key: orientation
+      var orientation: RswiftResources.StringResource { .init(key: "orientation", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: pointsLabel
+      ///
+      /// Key: pointsLabelName
+      var pointsLabelName: RswiftResources.StringResource { .init(key: "pointsLabelName", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
+
+      /// Value: tapToStartLabel
+      ///
+      /// Key: tapToStartLabelName
+      var tapToStartLabelName: RswiftResources.StringResource { .init(key: "tapToStartLabelName", tableName: "Localizable", source: source, developmentValue: nil, comment: nil) }
     }
   }
 
@@ -150,7 +173,7 @@ struct _R {
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 10 images.
+  /// This `_R.image` struct is generated, and contains static references to 13 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -178,14 +201,73 @@ struct _R {
     /// Image `ground`.
     var ground: RswiftResources.ImageResource { .init(name: "ground", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `lion`.
+    var lion: RswiftResources.ImageResource { .init(name: "lion", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `play_button`.
     var play_button: RswiftResources.ImageResource { .init(name: "play_button", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `rabbit`.
+    var rabbit: RswiftResources.ImageResource { .init(name: "rabbit", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `restart_button`.
     var restart_button: RswiftResources.ImageResource { .init(name: "restart_button", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `tree`.
+    var tree: RswiftResources.ImageResource { .init(name: "tree", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
-  /// This `_R.file` struct is generated, and contains static references to 4 resource files.
+  /// This `_R.font` struct is generated, and contains static references to 12 fonts.
+  struct font: Sequence {
+    let bundle: Foundation.Bundle
+
+    /// Font `Roboto-Black`.
+    var robotoBlack: RswiftResources.FontResource { .init(name: "Roboto-Black", bundle: bundle, filename: "Roboto-Black.ttf") }
+
+    /// Font `Roboto-BlackItalic`.
+    var robotoBlackItalic: RswiftResources.FontResource { .init(name: "Roboto-BlackItalic", bundle: bundle, filename: "Roboto-BlackItalic.ttf") }
+
+    /// Font `Roboto-Bold`.
+    var robotoBold: RswiftResources.FontResource { .init(name: "Roboto-Bold", bundle: bundle, filename: "Roboto-Bold.ttf") }
+
+    /// Font `Roboto-BoldItalic`.
+    var robotoBoldItalic: RswiftResources.FontResource { .init(name: "Roboto-BoldItalic", bundle: bundle, filename: "Roboto-BoldItalic.ttf") }
+
+    /// Font `Roboto-Italic`.
+    var robotoItalic: RswiftResources.FontResource { .init(name: "Roboto-Italic", bundle: bundle, filename: "Roboto-Italic.ttf") }
+
+    /// Font `Roboto-Light`.
+    var robotoLight: RswiftResources.FontResource { .init(name: "Roboto-Light", bundle: bundle, filename: "Roboto-Light.ttf") }
+
+    /// Font `Roboto-LightItalic`.
+    var robotoLightItalic: RswiftResources.FontResource { .init(name: "Roboto-LightItalic", bundle: bundle, filename: "Roboto-LightItalic.ttf") }
+
+    /// Font `Roboto-Medium`.
+    var robotoMedium: RswiftResources.FontResource { .init(name: "Roboto-Medium", bundle: bundle, filename: "Roboto-Medium.ttf") }
+
+    /// Font `Roboto-MediumItalic`.
+    var robotoMediumItalic: RswiftResources.FontResource { .init(name: "Roboto-MediumItalic", bundle: bundle, filename: "Roboto-MediumItalic.ttf") }
+
+    /// Font `Roboto-Regular`.
+    var robotoRegular: RswiftResources.FontResource { .init(name: "Roboto-Regular", bundle: bundle, filename: "Roboto-Regular.ttf") }
+
+    /// Font `Roboto-Thin`.
+    var robotoThin: RswiftResources.FontResource { .init(name: "Roboto-Thin", bundle: bundle, filename: "Roboto-Thin.ttf") }
+
+    /// Font `Roboto-ThinItalic`.
+    var robotoThinItalic: RswiftResources.FontResource { .init(name: "Roboto-ThinItalic", bundle: bundle, filename: "Roboto-ThinItalic.ttf") }
+
+    func makeIterator() -> IndexingIterator<[RswiftResources.FontResource]> {
+      [robotoBlack, robotoBlackItalic, robotoBold, robotoBoldItalic, robotoItalic, robotoLight, robotoLightItalic, robotoMedium, robotoMediumItalic, robotoRegular, robotoThin, robotoThinItalic].makeIterator()
+    }
+    func validate() throws {
+      for font in self {
+        if !font.canBeLoaded() { throw RswiftResources.ValidationError("[R.swift] Font '\(font.name)' could not be loaded, is '\(font.filename)' added to the UIAppFonts array in this targets Info.plist?") }
+      }
+    }
+  }
+
+  /// This `_R.file` struct is generated, and contains static references to 17 resource files.
   struct file {
     let bundle: Foundation.Bundle
 
@@ -198,17 +280,61 @@ struct _R {
     /// Resource file `Hero.sks`.
     var heroSks: RswiftResources.FileResource { .init(name: "Hero", pathExtension: "sks", bundle: bundle, locale: LocaleReference.none) }
 
+    /// Resource file `MarioScene.sks`.
+    var marioSceneSks: RswiftResources.FileResource { .init(name: "MarioScene", pathExtension: "sks", bundle: bundle, locale: LocaleReference.none) }
+
     /// Resource file `ObstaclesScene.sks`.
     var obstaclesSceneSks: RswiftResources.FileResource { .init(name: "ObstaclesScene", pathExtension: "sks", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-Black.ttf`.
+    var robotoBlackTtf: RswiftResources.FileResource { .init(name: "Roboto-Black", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-BlackItalic.ttf`.
+    var robotoBlackItalicTtf: RswiftResources.FileResource { .init(name: "Roboto-BlackItalic", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-Bold.ttf`.
+    var robotoBoldTtf: RswiftResources.FileResource { .init(name: "Roboto-Bold", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-BoldItalic.ttf`.
+    var robotoBoldItalicTtf: RswiftResources.FileResource { .init(name: "Roboto-BoldItalic", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-Italic.ttf`.
+    var robotoItalicTtf: RswiftResources.FileResource { .init(name: "Roboto-Italic", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-Light.ttf`.
+    var robotoLightTtf: RswiftResources.FileResource { .init(name: "Roboto-Light", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-LightItalic.ttf`.
+    var robotoLightItalicTtf: RswiftResources.FileResource { .init(name: "Roboto-LightItalic", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-Medium.ttf`.
+    var robotoMediumTtf: RswiftResources.FileResource { .init(name: "Roboto-Medium", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-MediumItalic.ttf`.
+    var robotoMediumItalicTtf: RswiftResources.FileResource { .init(name: "Roboto-MediumItalic", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-Regular.ttf`.
+    var robotoRegularTtf: RswiftResources.FileResource { .init(name: "Roboto-Regular", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-Thin.ttf`.
+    var robotoThinTtf: RswiftResources.FileResource { .init(name: "Roboto-Thin", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
+
+    /// Resource file `Roboto-ThinItalic.ttf`.
+    var robotoThinItalicTtf: RswiftResources.FileResource { .init(name: "Roboto-ThinItalic", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
   }
 
-  /// This `_R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `_R.storyboard` struct is generated, and contains static references to 5 storyboards.
   struct storyboard {
     let bundle: Foundation.Bundle
+    var flappyRabit: flappyRabit { .init(bundle: bundle) }
     var launchScreen: launchScreen { .init(bundle: bundle) }
     var main: main { .init(bundle: bundle) }
     var scoreScreenTemplate: scoreScreenTemplate { .init(bundle: bundle) }
+    var superMario: superMario { .init(bundle: bundle) }
 
+    func flappyRabit(bundle: Foundation.Bundle) -> flappyRabit {
+      .init(bundle: bundle)
+    }
     func launchScreen(bundle: Foundation.Bundle) -> launchScreen {
       .init(bundle: bundle)
     }
@@ -218,12 +344,34 @@ struct _R {
     func scoreScreenTemplate(bundle: Foundation.Bundle) -> scoreScreenTemplate {
       .init(bundle: bundle)
     }
+    func superMario(bundle: Foundation.Bundle) -> superMario {
+      .init(bundle: bundle)
+    }
     func validate() throws {
+      try self.flappyRabit.validate()
       try self.launchScreen.validate()
       try self.main.validate()
       try self.scoreScreenTemplate.validate()
+      try self.superMario.validate()
     }
 
+
+    /// Storyboard `FlappyRabit`.
+    struct flappyRabit: RswiftResources.StoryboardReference {
+      let bundle: Foundation.Bundle
+
+      let name = "FlappyRabit"
+
+      var flappyRabitViewController: RswiftResources.StoryboardViewControllerIdentifier<FlappyRabitViewController> { .init(identifier: "FlappyRabitViewController", storyboard: name, bundle: bundle) }
+      var welcomeViewController: RswiftResources.StoryboardViewControllerIdentifier<WelcomeViewController> { .init(identifier: "WelcomeViewController", storyboard: name, bundle: bundle) }
+
+      func validate() throws {
+        if UIKit.UIImage(named: "play_button", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'play_button' is used in storyboard 'FlappyRabit', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "rabbit", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'rabbit' is used in storyboard 'FlappyRabit', but couldn't be loaded.") }
+        if flappyRabitViewController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'flappyRabitViewController' could not be loaded from storyboard 'FlappyRabit' as 'FlappyRabitViewController'.") }
+        if welcomeViewController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'welcomeViewController' could not be loaded from storyboard 'FlappyRabit' as 'WelcomeViewController'.") }
+      }
+    }
 
     /// Storyboard `LaunchScreen`.
     struct launchScreen: RswiftResources.StoryboardReference, RswiftResources.InitialControllerContainer {
@@ -239,7 +387,7 @@ struct _R {
 
     /// Storyboard `Main`.
     struct main: RswiftResources.StoryboardReference, RswiftResources.InitialControllerContainer {
-      typealias InitialController = GameViewController
+      typealias InitialController = UIKit.UINavigationController
 
       let bundle: Foundation.Bundle
 
@@ -260,11 +408,24 @@ struct _R {
 
       let name = "ScoreScreenTemplate"
 
-      var scoreVC: RswiftResources.StoryboardViewControllerIdentifier<ScoreScreenViewController> { .init(identifier: "scoreVC", storyboard: name, bundle: bundle) }
+      var scoreVC: RswiftResources.StoryboardViewControllerIdentifier<ScoreViewController> { .init(identifier: "scoreVC", storyboard: name, bundle: bundle) }
 
       func validate() throws {
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "xmark") == nil { throw RswiftResources.ValidationError("[R.swift] System image named 'xmark' is used in storyboard 'ScoreScreenTemplate', but couldn't be loaded.") } }
-        if scoreVC() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'scoreVC' could not be loaded from storyboard 'ScoreScreenTemplate' as 'ScoreScreenViewController'.") }
+        if scoreVC() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'scoreVC' could not be loaded from storyboard 'ScoreScreenTemplate' as 'ScoreViewController'.") }
+      }
+    }
+
+    /// Storyboard `SuperMario`.
+    struct superMario: RswiftResources.StoryboardReference {
+      let bundle: Foundation.Bundle
+
+      let name = "SuperMario"
+
+      var superMarioViewController: RswiftResources.StoryboardViewControllerIdentifier<SuperMarioViewController> { .init(identifier: "SuperMarioViewController", storyboard: name, bundle: bundle) }
+
+      func validate() throws {
+        if superMarioViewController() == nil { throw RswiftResources.ValidationError("[R.swift] ViewController with identifier 'superMarioViewController' could not be loaded from storyboard 'SuperMario' as 'SuperMarioViewController'.") }
       }
     }
   }

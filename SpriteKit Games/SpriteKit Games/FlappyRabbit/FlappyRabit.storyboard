@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="SpriteKit_Games" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gvQ-qh-PYd">
+                                <rect key="frame" x="-60.666666666666657" y="262" width="514.33333333333337" height="353.33333333333326"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rabbit" translatesAutoresizingMaskIntoConstraints="NO" id="G3g-dH-DnH">
+                                        <rect key="frame" x="0.0" y="0.0" width="514.33333333333337" height="252.33333333333334"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flappy Rabit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xW9-TE-3X0">
+                                        <rect key="frame" x="116.99999999999997" y="282.33333333333337" width="280.33333333333326" height="71"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                        <color key="textColor" red="0.57520180358088036" green="0.29264346233978306" blue="0.77101089015151514" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gvQ-qh-PYd" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="fHr-H3-Prj"/>
+                            <constraint firstItem="gvQ-qh-PYd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="wGH-Zd-cWH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wv0-Bs-qYW"/>
+                    <connections>
+                        <outlet property="view" destination="5EZ-qb-Rvc" id="Rla-PH-4Bb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970.2290076335878" y="-2.1126760563380285"/>
+        </scene>
+        <!--Flappy Rabit View Controller-->
+        <scene sceneID="Gvd-8S-Ft2">
+            <objects>
+                <viewController storyboardIdentifier="FlappyRabitViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iLr-Cf-Mvp" customClass="FlappyRabitViewController" customModule="SpriteKit_Games" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7IN-t5-HWt" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezf-vM-DDh">
+                                <rect key="frame" x="87" y="348.66666666666669" width="219" height="180.00000000000006"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play_button"/>
+                                <connections>
+                                    <action selector="playButtonClicked:" destination="iLr-Cf-Mvp" eventType="touchUpInside" id="OtP-en-Jfq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sk3-ko-H9d"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ezf-vM-DDh" firstAttribute="centerX" secondItem="sk3-ko-H9d" secondAttribute="centerX" id="O17-cn-4fi"/>
+                            <constraint firstItem="ezf-vM-DDh" firstAttribute="centerY" secondItem="sk3-ko-H9d" secondAttribute="centerY" id="TtV-zz-vvk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="ezf-vM-DDh" id="xRz-Hb-ixl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gP1-O1-ypM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="-2"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="play_button" width="195" height="166"/>
+        <image name="rabbit" width="514.33331298828125" height="252.33332824707031"/>
+    </resources>
+</document>

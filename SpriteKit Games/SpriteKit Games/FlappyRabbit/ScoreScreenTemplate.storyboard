@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hMJ-TM-Kh6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Score View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="scoreVC" id="Y6W-OH-hqX" customClass="ScoreViewController" customModule="SpriteKit_Games" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NdR-Fg-DuB">
+                                <rect key="frame" x="155" y="148.66666666666663" width="290" height="347"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caz-nc-WO3">
+                                        <rect key="frame" x="238.66666666666671" y="8" width="46.333333333333343" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="buttonCloseTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hlc-54-RUS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Best Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbp-2E-543">
+                                        <rect key="frame" x="62.333333333333329" y="124.00000000000001" width="165.33333333333337" height="28.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIq-jg-beJ">
+                                        <rect key="frame" x="145" y="172.33333333333334" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JgX-nB-MPP">
+                                        <rect key="frame" x="56" y="269" width="178" height="34.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ild-jN-E6k">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="34.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemMintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Restart"/>
+                                                <connections>
+                                                    <action selector="buttonRestartTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vcR-e6-Tsz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uk-B7-SmD">
+                                                <rect key="frame" x="99" y="0.0" width="79" height="34.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemMintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Exit"/>
+                                                <connections>
+                                                    <action selector="buttonExitTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7Ol-XZ-S1Z"/>
+                                                    <action selector="buttonRestartTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3Y9-Vn-zJW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JgX-nB-MPP" firstAttribute="centerX" secondItem="NdR-Fg-DuB" secondAttribute="centerX" id="8z4-dk-e7N"/>
+                                    <constraint firstItem="caz-nc-WO3" firstAttribute="top" secondItem="NdR-Fg-DuB" secondAttribute="top" constant="8" id="Qdo-Xf-1Mb"/>
+                                    <constraint firstAttribute="trailing" secondItem="caz-nc-WO3" secondAttribute="trailing" constant="5" id="ZQS-2z-Zcn"/>
+                                    <constraint firstAttribute="width" constant="290" id="aw6-hb-vGP"/>
+                                    <constraint firstItem="dbp-2E-543" firstAttribute="top" secondItem="caz-nc-WO3" secondAttribute="bottom" constant="81.666666666666657" id="dP8-Si-dW3"/>
+                                    <constraint firstItem="CIq-jg-beJ" firstAttribute="top" secondItem="dbp-2E-543" secondAttribute="bottom" constant="20" id="isd-a0-PFJ"/>
+                                    <constraint firstItem="CIq-jg-beJ" firstAttribute="centerX" secondItem="NdR-Fg-DuB" secondAttribute="centerX" id="ouY-kc-Aml"/>
+                                    <constraint firstAttribute="bottom" secondItem="JgX-nB-MPP" secondAttribute="bottom" constant="43.666666666666686" id="qpa-0M-mgR"/>
+                                    <constraint firstAttribute="height" constant="347" id="u8D-IY-RUA"/>
+                                    <constraint firstItem="dbp-2E-543" firstAttribute="centerX" secondItem="NdR-Fg-DuB" secondAttribute="centerX" id="w9P-6R-gzz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="NdR-Fg-DuB" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="8wm-vb-z9B"/>
+                            <constraint firstItem="NdR-Fg-DuB" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="A8y-D9-mfa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oYY-u9-Hl2"/>
+                    <connections>
+                        <outlet property="scoreView" destination="NdR-Fg-DuB" id="QIe-bC-aQy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0JZ-Nq-VUj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hMJ-TM-Kh6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CIW-He-G7X">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="VKX-9D-BIn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSj-LT-Kz7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
